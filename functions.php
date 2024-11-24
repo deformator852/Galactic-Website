@@ -4,7 +4,7 @@ class ThemeAssets {
 	public function enqueue_assets(): void {
 		add_action( "wp_enqueue_scripts", function () {
 			wp_enqueue_script( "custom-jquery", get_template_directory_uri() . '/assets/js/jquery-3.7.1.min.js' );
-			wp_enqueue_script( "mainjs", get_template_directory_uri() . '/assets/js/main.js', array( "custom-jquery" ) );
+			wp_enqueue_script( "mainJs", get_template_directory_uri() . '/assets/js/main.js' );
 			if ( is_front_page( "home.php" ) ) {
 				wp_enqueue_style( "home_css", get_template_directory_uri() . '/assets/css/home.css' );
 			}

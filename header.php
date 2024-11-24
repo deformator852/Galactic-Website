@@ -1,11 +1,14 @@
-<?php include_once "components/purple_border_button.php" ?>
-<!DOCTYPE html>
+<?php
+include_once "components/purple_border_button.php";
+include_once "components/scroller.php";
+?>
+    <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
-    <meta charset="<?php bloginfo( "charset" ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php wp_head() ?>
-</head>
+    <head>
+        <meta charset="<?php bloginfo( "charset" ); ?>">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<?php wp_head() ?>
+    </head>
 <body>
 <header class="header">
     <div class="site-title">
@@ -22,3 +25,4 @@
 	render_purple_border_button( "Call To Action", "#" );
 	?>
 </header>
+<?php render_top_scroller(); ?>

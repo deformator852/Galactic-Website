@@ -1,5 +1,21 @@
 @use "extends";
 
+#scroll-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 30px;
+  width: 31px;
+  height: 31px;
+  background-color: #6000cd;
+  cursor: pointer;
+  @extend %flex-ja;
+
+  svg {
+    transform: rotate(180deg);
+    fill: white;
+  }
+}
+
 #wrapper {
   display: flex;
   flex-direction: column;
@@ -9,6 +25,7 @@
 
 body {
   @extend %flex-ja;
+  position: relative;
 
   a {
     text-decoration: none;
