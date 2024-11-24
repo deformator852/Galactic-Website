@@ -1,0 +1,39 @@
+@use "extends";
+
+.header {
+  @extend %flex-a;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 1200px;
+  max-width: 1200px;
+
+  &__menu {
+    display: flex;
+
+    a {
+      font-size: 100%;
+      color: #0f172a;
+    }
+
+    .menu-item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    .menu-item:first-child {
+      margin-left: 0;
+    }
+
+    .current-menu-item a {
+      color: #6000cd;
+    }
+  }
+
+  .site-title {
+    a {
+      font-weight: 600;
+      line-height: 1.2;
+      font-size: 1.5rem;
+      color: #0f172a;
+    }
+  }
+}
