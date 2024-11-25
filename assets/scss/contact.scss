@@ -1,0 +1,112 @@
+@use "index";
+@use "extends";
+@use "header";
+@use "footer";
+
+.contacts {
+  margin-top: 105px;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+
+  &__submit {
+    color: white;
+    height: 48px;
+    @extend %flex-ja;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    text-transform: capitalize;
+    border-radius: 6px;
+    background-color: #6000cd;
+    transition: 0.4s ease-in-out;
+    border: none;
+    width: 177px;
+    margin-top: 12px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #8e3eee;
+    }
+  }
+
+  &__message-textarea {
+    margin-top: 10px;
+  }
+
+  &__email-input, &__full-name-input, &__message-textarea {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-weight: 700;
+      color: #454f5e;
+
+      &::after {
+        content: "*";
+        color: red;
+        font-size: 1px;
+        padding-left: 4px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &__form {
+    input, textarea {
+      width: 557px;
+      background-color: #f9fafb;
+      border: 1px solid #c6cbd2;
+      border-radius: 2px;
+      color: #666;
+      padding: .75em;
+
+      &:focus {
+        border-style: dotted;
+        outline: none;
+      }
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    input {
+      margin-bottom: 13px;
+      height: 57.8px;
+    }
+
+  }
+
+  &__title {
+    line-height: 1.16em;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Libre Franklin', sans-serif;
+    letter-spacing: -1px;
+    width: 560px;
+    margin-bottom: 45px;
+  }
+
+  &__info {
+    & > div {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      p:first-child {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+
+      p:last-child {
+        color: #454f5e;
+        line-height: 1.6em;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+
+}

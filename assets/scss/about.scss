@@ -1,0 +1,99 @@
+@use "header";
+@use "footer";
+@use "index";
+@use "extends";
+
+.company-goals {
+  height: 438px;
+  width: 100vw;
+  margin-top: 90px;
+  background-color: #f1f5f9;
+  @extend %flex-j;
+
+  &__wrapper {
+    width: 1200px;
+    @extend %flex-j;
+    flex-direction: column;
+    //padding-top: 85px;
+  }
+
+  &__vision, &__mission {
+    height: 50%;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+
+    div {
+      height: 66px;
+    }
+
+    h3 {
+      color: #0f172a;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.2em;
+      letter-spacing: 0;
+      text-wrap: nowrap;
+    }
+
+    p {
+      width: 786px;
+      color: #454f5e;
+      line-height: 1.6em;
+      letter-spacing: 0;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+  }
+
+  &__divider {
+    width: 100%;
+    height: 1px;
+    background-color: #c1cbe1;
+  }
+}
+
+.introduction-to-business {
+  width: 1200px;
+  @extend %flex-j;
+  flex-direction: column;
+  margin-top: 100px;
+
+  &__benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+
+  &__title {
+    line-height: 1.16em;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Libre Franklin', sans-serif;
+    letter-spacing: -1px;
+  }
+
+  &__instruction {
+    color: #454f5e;
+    line-height: 1.6em;
+    letter-spacing: 0;
+    width: 550px;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+    font-style: normal;
+  }
+
+  &__instructions {
+    margin-top: 1.6em;
+    margin-bottom: 2.5em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    border-radius: 10px;
+  }
+}
+

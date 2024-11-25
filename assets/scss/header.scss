@@ -15,6 +15,12 @@
       color: #0f172a;
     }
 
+
+    .menu-item a:hover {
+      transition: color 0.4s ease;
+      color: #6000cd;
+    }
+
     .menu-item:not(:last-child) {
       margin-right: 30px;
     }

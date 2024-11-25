@@ -1,6 +1,8 @@
 <?php //Template Name:Home
-include_once "components/purple_background_button.php";
-include_once "components/learn_more.php";
+include_once COMPONENTS_PATH . "purple_background_button.php";
+include_once COMPONENTS_PATH . "learn_more.php";
+include_once COMPONENTS_PATH . "benefit.php";
+include_once COMPONENTS_PATH . "convincing.php";
 
 class RenderHomePage {
 	public function __construct() {
@@ -14,7 +16,7 @@ class RenderHomePage {
 				$this->about_section();
 				$this->describe_propositions();
 				$this->testimonials();
-				$this->convincing();
+				render_convincing( "We Will Write a Convincing Call To Action to Engage Your Audience Here", "We will write a sub-headline that introduces your call to action to website visitors here", "Call To Action", "link" );
 				?>
             </main>
 			<?php get_footer(); ?>
@@ -98,24 +100,9 @@ class RenderHomePage {
                     </div>
                 </div>
                 <div class="about-section__benefits">
-                    <div class="benefit">
-                        <p class="benefit__number">01</p>
-                        <h3 class="benefit__title">Benefit 1</h3>
-                        <p class="benefit__description">In this part, we will write about the benefits users derive from
-                            choosing your company product or services.</p>
-                    </div>
-                    <div class="benefit">
-                        <p class="benefit__number">02</p>
-                        <h3 class="benefit__title">Benefit 2</h3>
-                        <p class="benefit__description">In this part, we will write about the benefits users derive from
-                            choosing your company product or services.</p>
-                    </div>
-                    <div class="benefit">
-                        <p class="benefit__number">03</p>
-                        <h3 class="benefit__title">Benefit 3</h3>
-                        <p class="benefit__description">In this part, we will write about the benefits users derive from
-                            choosing your company product or services.</p>
-                    </div>
+					<?php render_benefit( "01", "Benefit 1", "In this part, we will write about the benefits users derive from choosing your company product or services." ); ?>
+					<?php render_benefit( "02", "Benefit 2", "In this part, we will write about the benefits users derive from choosing your company product or services." ); ?>
+					<?php render_benefit( "03", "Benefit 3", "In this part, we will write about the benefits users derive from choosing your company product or services." ); ?>
                 </div>
             </div>
         </section>
@@ -230,17 +217,6 @@ class RenderHomePage {
 		<?php
 	}
 
-	public function convincing() {
-		?>
-        <section class="convincing">
-            <div class="convincing__content">
-                <h2>We Will Write a Convincing Call To Action to Engage Your Audience Here</h2>
-                <p>We will write a sub-headline that introduces your call to action to website visitors here</p>
-				<?php render_purple_background_button( "Call To Action", "link" ); ?>
-            </div>
-        </section>
-		<?php
-	}
 }
 
 new RenderHomePage()

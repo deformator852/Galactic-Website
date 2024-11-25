@@ -3,7 +3,7 @@ $(document).ready(function () {
         $("html,body").animate({scrollTop: 0}, 600)
     })
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 600) {
+        if ($(this).scrollTop() > 300) {
             $("#scroll-to-top").fadeIn(800);
         } else {
             $("#scroll-to-top").fadeOut();
