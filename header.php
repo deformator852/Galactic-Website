@@ -22,7 +22,7 @@ include_once "components/scroller.php";
 		] ); ?>
     </menu>
 	<?php
-	render_purple_border_button( "Call To Action", "#" );
+	render_purple_border_button( "Free Strategy", "#" );
 	?>
 </header>
 <?php render_top_scroller(); ?>

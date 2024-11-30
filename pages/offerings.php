@@ -11,7 +11,7 @@ class RenderOfferingsPage {
             <main class="main">
 				<?php
 				$this->offerings();
-				render_convincing( "We Will Write a Convincing Call To Action to Engage Your Audience Here", "We will write a sub-headline that introduces your call to action to website visitors here", "Call To Action", "link" );
+                render_convincing( "Take Your Business to the Next Level Today!", "Ready to achieve measurable results and grow your online presence?", "Get Started Now", "link" );
 				?>
             </main>
 			<?php get_footer(); ?>
@@ -25,54 +25,42 @@ class RenderOfferingsPage {
             <div class="offering">
                 <div>
                     <p class="offering__number">01</p>
-                    <h2 class="offering__title">Offering 1</h2>
-                    <p class="offering__description">This section will highlight specific details about your core
-                        offering. We will write about what
-                        your offering is and how your company uses it to help users achieve their desired goals.
-                    </p>
+                    <h2 class="offering__title">SEO Optimization</h2>
+                    <p class="offering__description">We help businesses improve search engine rankings, increase organic traffic, and achieve long-term growth with our expert SEO services.</p>
                 </div>
-                <img class="offering__image"
-                     src="https://websitedemos.net/galatic-02/wp-content/uploads/sites/1455/2024/03/services-01.jpg">
+                <img class="offering__image" src="https://websitedemos.net/galatic-02/wp-content/uploads/sites/1455/2024/03/services-01.jpg">
             </div>
             <div class="offering__divider"></div>
+
             <div class="offering">
                 <div>
                     <p class="offering__number">02</p>
-                    <h2 class="offering__title">Offering 2</h2>
-                    <p class="offering__description">This section will highlight specific details about your core
-                        offering. We will write about what
-                        your offering is and how your company uses it to help users achieve their desired goals.
-                    </p>
+                    <h2 class="offering__title">Social Media Marketing</h2>
+                    <p class="offering__description">Our social media strategies engage your audience, build brand loyalty, and drive conversions across all platforms.</p>
                 </div>
-                <img class="offering__image"
-                     src="https://websitedemos.net/galatic-02/wp-content/uploads/sites/1455/2024/03/services-02.jpg">
+                <img class="offering__image" src="https://websitedemos.net/galatic-02/wp-content/uploads/sites/1455/2024/03/services-02.jpg">
             </div>
             <div class="offering__divider"></div>
+
             <div class="offering">
                 <div>
                     <p class="offering__number">03</p>
-                    <h2 class="offering__title">Offering 3</h2>
-                    <p class="offering__description">This section will highlight specific details about your core
-                        offering. We will write about what
-                        your offering is and how your company uses it to help users achieve their desired goals.
-                    </p>
+                    <h2 class="offering__title">PPC Advertising</h2>
+                    <p class="offering__description">We create and manage pay-per-click campaigns to maximize your ROI, ensuring the right audience finds your business online.</p>
                 </div>
-                <img class="offering__image"
-                     src="https://websitedemos.net/galatic-02/wp-content/uploads/sites/1455/2024/03/services-03.jpg">
+                <img class="offering__image" src="https://websitedemos.net/galatic-02/wp-content/uploads/sites/1455/2024/03/services-03.jpg">
             </div>
             <div class="offering__divider"></div>
+
             <div class="offering">
                 <div>
                     <p class="offering__number">04</p>
-                    <h2 class="offering__title">Offering 4</h2>
-                    <p class="offering__description">This section will highlight specific details about your core
-                        offering. We will write about what
-                        your offering is and how your company uses it to help users achieve their desired goals.
-                    </p>
+                    <h2 class="offering__title">Content Marketing</h2>
+                    <p class="offering__description">Our content strategies drive engagement and establish your brand as an authority in your industry by creating valuable, relevant content.</p>
                 </div>
-                <img class="offering__image"
-                     src="https://websitedemos.net/galatic-02/wp-content/uploads/sites/1455/2024/03/services-04.jpg">
+                <img class="offering__image" src="https://websitedemos.net/galatic-02/wp-content/uploads/sites/1455/2024/03/services-04.jpg">
             </div>
+
         </section>
 		<?php
 	}

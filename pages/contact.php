@@ -1,6 +1,7 @@
 <?php
-
 //Template Name: Contact
+include_once COMPONENTS_PATH . "convincing.php";
+include_once COMPONENTS_PATH . "purple_background_button.php";
 class RenderContactPage {
 	public function __construct() {
 		?>
@@ -22,10 +23,10 @@ class RenderContactPage {
                             <p>EMAIL:</p>
                             <p>contact@example.com</p>
                         </div>
-                        <div class="contacts__socials">
-                            <p>FOLLOW US:</p>
-                            <ul></ul>
-                        </div>
+<!--                        <div class="contacts__socials">-->
+<!--                            <p>FOLLOW US:</p>-->
+<!--                            <ul></ul>-->
+<!--                        </div>-->
                     </div>
                     <div class="contacts__form">
                         <form>
@@ -45,7 +46,7 @@ class RenderContactPage {
                         </form>
                     </div>
                 </section>
-                <!--				render_convincing( "We Will Write a Convincing Call To Action to Engage Your Audience Here", "We will write a sub-headline that introduces your call to action to website visitors here", "Call To Action", "link" );-->
+                <?php render_convincing( "Take Your Business to the Next Level Today!", "Ready to achieve measurable results and grow your online presence?", "Get Started Now", "link" ); ?>
             </main>
 			<?php get_footer(); ?>
         </div>
